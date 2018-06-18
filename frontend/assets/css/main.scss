@@ -7,6 +7,7 @@ body {
   top: 4rem;
   z-index: 1000;
   height: calc(100vh - 4rem);
+  padding-left: 0;
 }
 
 .vb > .vb-dragger {
@@ -28,7 +29,7 @@ body {
     background-color 100ms ease-out,
     margin 100ms ease-out,
     height 100ms ease-out;
-  background-color: rgba(48, 121, 244,.1);
+  background-color: rgba(112, 116, 122,.1);
   margin: 5px 5px 5px 0;
   border-radius: 20px;
   height: calc(100% - 10px);
@@ -36,21 +37,21 @@ body {
 }
 
 .vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
-  background-color: rgba(48, 121, 244,.3);
+  background-color: rgba(112, 116, 122, .3);
 }
 
 .vb > .vb-dragger:hover > .vb-dragger-styler {
-  background-color: rgba(48, 121, 244,.5);
+  background-color: rgba(112, 116, 122, 0.55);
   margin: 0px;
   height: 100%;
 }
 
 .vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
-  background-color: rgba(48, 121, 244,.5);
+  background-color: rgba(112, 116, 122, 0.55);
   margin: 0px;
   height: 100%;
 }
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
-  background-color: rgba(48, 121, 244,.5);
+  background-color: rgba(112, 116, 122, 0.55);
 }

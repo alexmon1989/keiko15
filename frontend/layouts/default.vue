@@ -16,7 +16,7 @@
 
 
 <script>
-  import mSidebar from '~/components/SideBar.vue';
+  import mSidebar from '@/components/SideBar.vue';
 
   export default {
     components: {mSidebar}

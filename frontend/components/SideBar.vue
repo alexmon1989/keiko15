@@ -69,15 +69,6 @@
           {id: 5, img: '/img/categories/lapsha.png', title: 'Лапша'},
           {id: 6, img: '/img/categories/lapsha.png', title: 'Лапша'},
           {id: 7, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 8, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 9, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 10, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 11, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 12, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 13, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 14, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 16, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 16, img: '/img/categories/lapsha.png', title: 'Лапша'},
         ]
       }
     }
@@ -94,26 +85,27 @@
     padding-left: 30px;
     padding-right: 20px;
     padding-top: 20px;
-    background-color: #292b30;
+    background-color: #343a40;
     margin-bottom: 0;
   }
 
   .menu {
     height: calc(75vh - 11rem);
+    background-color: #1e2021;
 
     @media screen and (min-width: 768px) {
       height: calc(100vh - 11rem);
     }
 
     .list-group-item {
-      background-color: #1e2021;
+      background-color: inherit;
       border-left: none;
       border-right: none;
       border-top: none;
       border-bottom: #2f3132 1px solid;
       margin-bottom: 0;
       color: #fff;
-      font-size: 0.8rem;
+      font-size: 1rem;
       padding: 0;
 
       &:hover {
@@ -127,7 +119,7 @@
   }
 
   .nav-tabs {
-    background-color: #292b30;
+    background-color: #343a40;
     padding-left: 30px;
     padding-bottom: 10px;
     min-height: 3rem;

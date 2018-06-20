@@ -1,64 +1,66 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        keiko15
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <section class="container-fluid px-0" >
+      <b-carousel id="carousel1"
+                  style="text-shadow: 1px 1px 2px #333;"
+                  controls
+                  indicators
+                  background="#ababab"
+                  :interval="4000"
+      >
+
+        <!-- Text slides with image -->
+        <b-carousel-slide img-src="https://picsum.photos/1920/1080/?image=52">
+          <h3><a href="#" class="text-white">First slide</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            eros felis, tincidunt a tincidunt eget, convallis vel est.
+          </p>
+        </b-carousel-slide>
+
+        <!-- Slides with custom text -->
+        <b-carousel-slide img-src="https://picsum.photos/1920/1080/?image=54">
+          <h3><a href="#" class="text-white">Second slide</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            eros felis, tincidunt a tincidunt eget, convallis vel est.
+          </p>
+        </b-carousel-slide>
+
+        <!-- Slides with image only -->
+        <b-carousel-slide img-src="https://picsum.photos/1920/1080/?image=58">
+          <h3><a href="#" class="text-white">Third slide</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            eros felis, tincidunt a tincidunt eget, convallis vel est.
+          </p>
+        </b-carousel-slide>
+
+      </b-carousel>
+
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+  export default {
 
-export default {
-  components: {
-    AppLogo
   }
-}
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style scoped lang="scss">
+  .container-fluid {
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+    min-height: calc(100vh - 4rem);
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+    .carousel-item:after {
+      content:"";
+      display:block;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      background:rgba(0, 0, 0, 0.6);
+    }
 
-.links {
-  padding-top: 15px;
-}
+  }
 </style>

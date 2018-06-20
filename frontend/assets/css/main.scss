@@ -6,7 +6,7 @@ body {
   position: relative;
   top: 0;
   z-index: 1000;
-  height: calc(100vh - 4rem);
+  height: calc(75vh - 4rem);
   padding-left: 0;
   padding-right: 0;
 }
@@ -15,6 +15,7 @@ body {
   .bd-sidebar {
     position: sticky;
     top: 4rem;
+    height: calc(100vh - 4rem);
   }
 }
 

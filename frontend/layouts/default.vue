@@ -1,5 +1,7 @@
 <template>
   <div>
+    <m-nav></m-nav>
+
     <b-container fluid >
       <b-row>
         <b-col cols="12" md="3" xl="2" class="bd-sidebar">
@@ -17,8 +19,9 @@
 
 <script>
   import mSidebar from '@/components/SideBar.vue';
+  import mNav from '~/components/navbar.vue';
 
   export default {
-    components: {mSidebar}
+    components: {mSidebar, mNav}
   }
 </script>

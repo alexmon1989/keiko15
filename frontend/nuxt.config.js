@@ -37,11 +37,19 @@ module.exports = {
   },
   modules: [
     'bootstrap-vue/nuxt',
+    'nuxt-fontawesome',
   ],
   css: [
     '@/assets/css/main.scss'
   ],
   plugins: [
     '@plugins/vuebar'
-  ]
+  ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/fontawesome-free-solid'
+      },
+    ],
+  },
 };

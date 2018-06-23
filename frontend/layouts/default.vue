@@ -10,6 +10,12 @@
 
         <b-col cols="12" md="9" xl="10" class="px-0">
           <nuxt/>
+
+          <b-row class="mx-0">
+            <b-col cols="12">
+              <m-footer></m-footer>
+            </b-col>
+          </b-row>
         </b-col>
       </b-row>
     </b-container>
@@ -19,9 +25,10 @@
 
 <script>
   import mSidebar from '@/components/SideBar.vue';
-  import mNav from '~/components/navbar.vue';
+  import mFooter from '@/components/Footer.vue';
+  import mNav from '@/components/navbar.vue';
 
   export default {
-    components: {mSidebar, mNav}
+    components: {mSidebar, mNav, mFooter}
   }
 </script>

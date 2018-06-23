@@ -50,6 +50,10 @@ module.exports = {
       {
         set: '@fortawesome/fontawesome-free-solid'
       },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['faVk', 'faFacebook', 'faInstagram']
+      },
     ],
   },
 };

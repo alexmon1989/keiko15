@@ -8,7 +8,7 @@
           <m-sidebar></m-sidebar>
         </b-col>
 
-        <b-col cols="12" md="9" xl="10">
+        <b-col cols="12" md="9" xl="10" class="px-0">
             <nuxt></nuxt>
 
             <m-footer></m-footer>

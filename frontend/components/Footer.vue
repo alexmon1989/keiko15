@@ -1,6 +1,5 @@
 <template>
-  <div class="footer">
-    <b-row>
+    <b-row class="footer mx-0">
       <b-col cols="12" md="4" class="px-5">
         <div class="d-block pb-3"><img src="/img/logo_footer.jpg" alt=""></div>
         <p>Прием заказов: c 10:00 до 4:45 <br>Телефон: +7 495 234-24-24</p>
@@ -46,12 +45,11 @@
             &copy; 2018 доставка суши Keiko
       </b-col>
     </b-row>
-  </div>
 </template>
 
 <script>
   export default {
-    name: "footer"
+    name: "m-footer"
   }
 </script>
 
@@ -59,8 +57,6 @@
   .footer {
     color: #888;
     background-color: #2b2d2f;
-    margin-right: -15px;
-    margin-left: -15px;
     padding: 32px 0 0 0;
 
     h5 {

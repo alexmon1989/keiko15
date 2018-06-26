@@ -1,5 +1,5 @@
 <template>
-  <section class="container-fluid px-0" >
+  <section class="container-fluid px-0">
       <b-carousel id="carousel1"
                   style="text-shadow: 1px 1px 2px #333;"
                   controls
@@ -42,7 +42,7 @@
 
 <script>
   export default {
-
+    layout: 'main_page'
   }
 </script>
 

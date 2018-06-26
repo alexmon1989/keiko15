@@ -3,7 +3,7 @@
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand href="#">
+    <b-navbar-brand to="/">
       <img src="/img/logo.jpg" class="d-inline-block align-top" alt="Keiko15 Logo">
     </b-navbar-brand>
 

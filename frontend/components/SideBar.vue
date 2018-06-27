@@ -5,7 +5,7 @@
       <b-tab title="Категории" active @click="refreshScrollbar('tab1')">
         <div class="menu" v-bar ref="tab1">
           <b-list-group>
-            <b-list-group-item v-for="category in categories" :key="category.id" href="#">
+            <b-list-group-item v-for="category in categories" :key="category.id" :to="{path:'/categories/' + category.id}">
               <img :src="category.img" alt=""> {{ category.title }}
             </b-list-group-item>
           </b-list-group>
@@ -41,37 +41,10 @@
       },
     },
 
-    data() {
-      return {
-        categories: [
-          {id: 1, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 2, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 3, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 4, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 5, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 6, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 7, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 8, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 9, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 10, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 11, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 12, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 13, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 14, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 15, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 16, img: '/img/categories/lapsha.png', title: 'Лапша'},
-        ],
-        ingredients: [
-          {id: 1, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 2, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 3, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 4, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 5, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 6, img: '/img/categories/lapsha.png', title: 'Лапша'},
-          {id: 7, img: '/img/categories/lapsha.png', title: 'Лапша'},
-        ]
-      }
-    }
+    computed: {
+      categories () { return this.$store.state.categories.list },
+      ingredients () { return this.$store.state.ingredients.list },
+    },
   }
 </script>
 

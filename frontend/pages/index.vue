@@ -42,7 +42,15 @@
 
 <script>
   export default {
-    layout: 'main_page'
+    layout: 'main_page',
+    head () {
+      return {
+        title: 'Главная страница',
+        meta: [
+          { hid: 'description', name: 'description', content: '' }
+        ]
+      }
+    }
   }
 </script>
 

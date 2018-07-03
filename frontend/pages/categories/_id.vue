@@ -18,9 +18,26 @@
           <div class="content">
             <div class="markers">
               <a href="#">
-                <img src="/img/markers/new.png" class="pr-1" alt="" v-if="product.isNew">
-                <img src="/img/markers/hit.png" class="pr-1" alt="" v-if="product.isHit">
-                <img src="/img/markers/spicy.png" class="pr-1" alt="" v-if="product.isSpicy">
+                <img v-b-tooltip.html.bottom
+                     title="Новинка!"
+                     variant="outline-success"
+                     src="/img/markers/new.png"
+                     class="pr-1"
+                     alt="" v-if="product.isNew">
+                <img v-b-tooltip.html.bottom
+                     title="Хит!"
+                     variant="outline-success"
+                     src="/img/markers/hit.png"
+                     class="pr-1"
+                     alt=""
+                     v-if="product.isHit">
+                <img v-b-tooltip.html.bottom
+                     title="Осторожно, острое!"
+                     variant="outline-success"
+                     src="/img/markers/spicy.png"
+                     class="pr-1"
+                     alt=""
+                     v-if="product.isSpicy">
               </a>
             </div>
 

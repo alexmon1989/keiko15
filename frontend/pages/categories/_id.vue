@@ -38,13 +38,14 @@
 
             <b-col class="to-cart">
               <div>
-                <a href="#">
+                <a href="#" @click.prevent='removeFromCart(product)'>
                   <font-awesome-icon icon="minus" style="font-size: 1rem; color: #cccc28"/>
                 </a>
               </div>
-              <div>0</div>
+              <div v-if="$store.state.cart.list.find(p => p.id === parseInt(product.id))">{{$store.state.cart.list.find(p => p.id === parseInt(product.id)).quantity }}</div>
+              <div v-else>0</div>
               <div>
-                <a href="#">
+                <a href="#" @click.prevent='addToCart(product)'>
                   <font-awesome-icon icon="plus" style="font-size: 1rem; color: #cccc28"/>
                 </a>
               </div>
@@ -56,6 +57,8 @@
 </template>
 
 <script>
+  import { mapActions } from 'vuex';
+
   export default {
     data() {
       return {
@@ -83,7 +86,11 @@
     methods: {
       sort(key) {
         this.sortBy = key;
-      }
+      },
+      ...mapActions({
+        addToCart: 'cart/add',
+        removeFromCart: 'cart/remove',
+      })
     },
     head () {
       return {

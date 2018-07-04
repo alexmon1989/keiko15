@@ -11,6 +11,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 4,
@@ -47,6 +50,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 5,
@@ -59,6 +63,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 6,
@@ -71,6 +76,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 7,
@@ -83,6 +89,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 8,
@@ -95,6 +102,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 9,
@@ -107,6 +115,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 10,
@@ -119,6 +128,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 11,
@@ -143,6 +153,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 13,
@@ -155,6 +166,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
     {
       id: 14,
@@ -167,6 +179,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [],
     },
   ]
 });

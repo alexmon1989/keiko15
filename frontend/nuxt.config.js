@@ -43,7 +43,8 @@ module.exports = {
     '@/assets/css/main.scss'
   ],
   plugins: [
-    '@plugins/vuebar'
+    '@plugins/vuebar',
+    '@plugins/vuecarousel',
   ],
   fontawesome: {
     imports: [

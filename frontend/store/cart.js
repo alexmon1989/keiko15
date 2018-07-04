@@ -42,7 +42,6 @@ export const actions = {
 export const mutations = {
 
   ['ADD_TO_CART'](state, product) {
-    console.log(product);
     const record = state.list.find(p => p.id === product.id);
 
     if (!record) {

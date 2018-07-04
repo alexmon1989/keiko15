@@ -17,33 +17,35 @@
 
           <div class="content">
             <div class="markers">
-              <a href="#">
-                <img v-b-tooltip.html.bottom
-                     title="Новинка!"
-                     variant="outline-success"
-                     src="/img/markers/new.png"
-                     class="pr-1"
-                     alt="" v-if="product.isNew">
-                <img v-b-tooltip.html.bottom
-                     title="Хит!"
-                     variant="outline-success"
-                     src="/img/markers/hit.png"
-                     class="pr-1"
-                     alt=""
-                     v-if="product.isHit">
-                <img v-b-tooltip.html.bottom
-                     title="Осторожно, острое!"
-                     variant="outline-success"
-                     src="/img/markers/spicy.png"
-                     class="pr-1"
-                     alt=""
-                     v-if="product.isSpicy">
-              </a>
+              <router-link :to="{path:'/products/' + product.id}">
+                <a href="#">
+                  <img v-b-tooltip.html.bottom
+                       title="Новинка!"
+                       variant="outline-success"
+                       src="/img/markers/new.png"
+                       class="pr-1"
+                       alt="" v-if="product.isNew">
+                  <img v-b-tooltip.html.bottom
+                       title="Хит!"
+                       variant="outline-success"
+                       src="/img/markers/hit.png"
+                       class="pr-1"
+                       alt=""
+                       v-if="product.isHit">
+                  <img v-b-tooltip.html.bottom
+                       title="Осторожно, острое!"
+                       variant="outline-success"
+                       src="/img/markers/spicy.png"
+                       class="pr-1"
+                       alt=""
+                       v-if="product.isSpicy">
+                </a>
+              </router-link>
             </div>
 
-            <a href="#"><img :src="product.img" class="img-fluid pb-3" alt=""></a>
+            <router-link :to="{path:'/products/' + product.id}"><img :src="product.img" class="img-fluid pb-3" alt=""></router-link>
 
-            <a href="#" class="title">{{ product.title }}</a>
+            <router-link :to="{path:'/products/' + product.id}">{{ product.title }}</router-link>
 
             <div class="py-3 description">{{ product.description }}</div>
           </div>

@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div>
     <h1 v-if="error.statusCode === 404">Страница не найдена</h1>
     <h1 v-else>Произошла ошибка</h1>
-    <nuxt-link to="/">Вернуться на главную</nuxt-link>
+    <nuxt-link to="/" style="color: #cccc28">Вернуться на главную</nuxt-link>
   </div>
 </template>
 

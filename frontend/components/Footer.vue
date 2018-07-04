@@ -55,6 +55,7 @@
 
 <style scoped lang="scss">
   .footer {
+    flex-grow: 0;
     color: #888;
     background-color: #2b2d2f;
     padding: 32px 0 0 0;

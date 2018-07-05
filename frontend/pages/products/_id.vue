@@ -17,7 +17,35 @@
 
     <b-row class="py-3">
       <b-col cols="12" md="6" class="d-flex justify-content-center">
-        <img class="img-fluid" :src="product.img" alt="">
+        <div>
+          <div class="markers">
+            <router-link :to="{path:'/products/' + product.id}">
+              <a href="#">
+                <img v-b-tooltip.html.bottom
+                     title="Новинка!"
+                     variant="outline-success"
+                     src="/img/markers/new.png"
+                     class="pr-1"
+                     alt="" v-if="product.isNew">
+                <img v-b-tooltip.html.bottom
+                     title="Хит!"
+                     variant="outline-success"
+                     src="/img/markers/hit.png"
+                     class="pr-1"
+                     alt=""
+                     v-if="product.isHit">
+                <img v-b-tooltip.html.bottom
+                     title="Осторожно, острое!"
+                     variant="outline-success"
+                     src="/img/markers/spicy.png"
+                     class="pr-1"
+                     alt=""
+                     v-if="product.isSpicy">
+              </a>
+            </router-link>
+          </div>
+          <img class="img-fluid" :src="product.img" alt="">
+        </div>
       </b-col>
 
       <b-col cols="12" md="6">
@@ -87,6 +115,32 @@
               :key="product.id"
               class="slide p-3"
             >
+              <div class="markers">
+                <router-link :to="{path:'/products/' + product.id}">
+                  <a href="#">
+                    <img v-b-tooltip.html.bottom
+                         title="Новинка!"
+                         variant="outline-success"
+                         src="/img/markers/new.png"
+                         class="pr-1"
+                         alt="" v-if="product.isNew">
+                    <img v-b-tooltip.html.bottom
+                         title="Хит!"
+                         variant="outline-success"
+                         src="/img/markers/hit.png"
+                         class="pr-1"
+                         alt=""
+                         v-if="product.isHit">
+                    <img v-b-tooltip.html.bottom
+                         title="Осторожно, острое!"
+                         variant="outline-success"
+                         src="/img/markers/spicy.png"
+                         class="pr-1"
+                         alt=""
+                         v-if="product.isSpicy">
+                  </a>
+                </router-link>
+              </div>
               <router-link :to="{path:'/products/' + product.id}"><b-img :src="product.img" fluid alt="" /></router-link>
 
               <h5 class="pt-3"><router-link :to="{path:'/products/' + product.id}">{{ product.title }}</router-link></h5>
@@ -206,5 +260,8 @@
       }
     }
 
+    .markers {
+      position: absolute;
+    }
   }
 </style>

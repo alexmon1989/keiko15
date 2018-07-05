@@ -8,7 +8,7 @@
           <m-sidebar></m-sidebar>
         </b-col>
 
-        <b-col cols="12" md="9" xl="10" class="px-0 d-flex flex-column">
+        <b-col cols="12" md="9" xl="10" class="px-0 d-flex flex-column offset-md-3 offset-xl-2">
 
             <div class="px-3 py-3 page-content">
               <nuxt></nuxt>
@@ -25,6 +25,7 @@
   .page-content {
     flex-grow: 1;
     color: #f7f8fb;
+    margin-top: 4rem;
   }
 </style>
 

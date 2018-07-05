@@ -53,7 +53,7 @@
         <h1 class="pt-2 pt-md-0">{{ product.title }}</h1>
 
         <div class="pt-4 price">
-          {{ product.price }} &#8381;
+          {{ product.price }} <font-awesome-icon icon="ruble-sign" />
         </div>
 
         <div class="pt-1 pb-5 d-flex">
@@ -148,7 +148,7 @@
 
               <b-row class="pt-3">
                 <b-col>
-                  {{ product.price }} &#8381;
+                  {{ product.price }} <font-awesome-icon icon="ruble-sign" />
                 </b-col>
 
                 <b-col class="d-flex justify-content-around">

@@ -36,7 +36,7 @@
           </template>
           <template slot="price" slot-scope="data">
             <div class="text-nowrap">
-              {{data.value}} &#8381;
+              {{data.value}} <font-awesome-icon icon="ruble-sign" />
             </div>
           </template>
         </b-table>
@@ -45,7 +45,7 @@
       <div class="cart-bottom">
         <div class="total-price">
           <div class="font-weight-bold">Общая сумма:</div>
-          <div>{{ total }} руб.</div>
+          <div>{{ total }} <font-awesome-icon icon="ruble-sign" /></div>
         </div>
         <div class="text-center">
           <b-button class="order-btn">Оформить заказ</b-button>

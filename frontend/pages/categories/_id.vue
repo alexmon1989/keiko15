@@ -52,7 +52,7 @@
 
           <b-row class="footer">
             <b-col class="price">
-              {{ product.price }} &#8381;
+              {{ product.price }} <font-awesome-icon icon="ruble-sign" />
             </b-col>
 
             <b-col class="to-cart">
@@ -159,6 +159,7 @@
 
     .content {
       flex-grow: 1;
+      overflow: hidden;
 
       .markers {
         position: absolute;

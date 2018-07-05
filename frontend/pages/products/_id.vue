@@ -104,16 +104,17 @@
       <b-col cols="12">
         <h3>С этим блюдом заказывают</h3>
 
-        <no-ssr>
+        <no-ssr placeholder="Загрузка...">
           <carousel
             class="py-4"
             paginationActiveColor="#cccc28"
-            :perPageCustom="[[480, 2], [768, 3], [1024, 4], [1280, 6]]"
+            :perPageCustom="[[480, 2], [650, 3], [1024, 4], [1280, 6]]"
           >
             <slide
               v-for="product in relatedProducts"
               :key="product.id"
               class="slide p-3"
+              :class="{ 'max-width-300': relatedProducts.length < 6 }"
             >
               <div class="markers">
                 <router-link :to="{path:'/products/' + product.id}">
@@ -239,6 +240,10 @@
 
     .VueCarousel-dot-button {
       outline: none !important;
+    }
+
+    .max-width-300 {
+      max-width: 300px;
     }
 
     .slide {

@@ -24,7 +24,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 6,
@@ -76,7 +76,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 7,
@@ -89,7 +89,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 8,
@@ -102,7 +102,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 9,
@@ -115,7 +115,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 10,
@@ -128,7 +128,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 11,
@@ -141,6 +141,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 12,
@@ -153,7 +154,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 13,
@@ -166,7 +167,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
     {
       id: 14,
@@ -179,7 +180,7 @@ export const state = () => ({
       isNew: true,
       isHit: false,
       isSpicy: false,
-      relatedProducts: [],
+      relatedProducts: [2, 3, 4, 5, 6, 7, 8, 9],
     },
   ]
 });

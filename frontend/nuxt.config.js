@@ -1,5 +1,4 @@
 module.exports = {
-  router: { base: '/keiko15/' },
   /*
   ** Headers of the page
   */
@@ -41,19 +40,19 @@ module.exports = {
     'nuxt-fontawesome',
   ],
   css: [
-    '@/assets/css/main.scss'
+    '~/assets/css/main.scss'
   ],
   plugins: [
-    '@plugins/vuebar',
-    '@plugins/vuecarousel',
+    '~plugins/vuebar',
+    '~plugins/vuecarousel',
   ],
   fontawesome: {
     imports: [
       {
-        set: '@fortawesome/fontawesome-free-solid'
+        set: '~fortawesome/fontawesome-free-solid'
       },
       {
-        set: '@fortawesome/free-brands-svg-icons',
+        set: '~fortawesome/free-brands-svg-icons',
         icons: ['faVk', 'faFacebook', 'faInstagram']
       },
     ],

@@ -102,7 +102,7 @@
 </script>
 
 <style lang="scss">
-  @import "@/assets/css/variables.scss";
+  @import "~/assets/css/variables.scss";
 
   .bd-sidebar {
     height: calc(100vh - 4rem);

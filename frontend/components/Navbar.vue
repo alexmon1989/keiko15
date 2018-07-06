@@ -39,7 +39,7 @@
 </template>
 
 <script>
-  import Cart from '@/components/Cart.vue';
+  import Cart from '~/components/Cart.vue';
 
   export default {
     name: "navbar",

@@ -209,7 +209,7 @@
 </script>
 
 <style lang="scss">
-  @import "@/assets/css/variables.scss";
+  @import "~/assets/css/variables.scss";
 
   .product-details {
     .price {

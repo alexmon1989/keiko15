@@ -123,7 +123,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import "@/assets/css/variables.scss";
+  @import "~/assets/css/variables.scss";
 
   .filter {
     background-color: #1f1f1f;

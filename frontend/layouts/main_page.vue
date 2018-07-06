@@ -1,14 +1,14 @@
 <template>
-  <div>
+  <div class="h-100">
     <m-nav></m-nav>
 
-    <b-container fluid >
-      <b-row>
-        <b-col cols="12" md="3" xl="2" class="bd-sidebar">
+    <b-container class="h-100" fluid>
+      <b-row class="h-100">
+        <b-col cols="12" md="3" xl="2" class="bd-sidebar-wrapper">
           <m-sidebar></m-sidebar>
         </b-col>
 
-        <b-col cols="12" md="9" xl="10" class="px-0 d-flex flex-column offset-md-3 offset-xl-2">
+        <b-col cols="12" md="9" xl="10" class="px-0 d-flex flex-column offset-md-3 offset-xl-2 h-100">
 
           <div class="page-content">
             <nuxt></nuxt>
@@ -21,11 +21,8 @@
   </div>
 </template>
 
-<style>
-  .page-content {
-    flex-grow: 1;
-    margin-top: 4rem;
-  }
+<style lang="scss">
+
 </style>
 
 <script>

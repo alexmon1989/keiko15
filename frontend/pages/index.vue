@@ -57,8 +57,6 @@
 <style scoped lang="scss">
   .container-fluid {
 
-    min-height: calc(100vh - 4rem);
-
     .carousel-item:after {
       content:"";
       display:block;

@@ -49,10 +49,10 @@ module.exports = {
   fontawesome: {
     imports: [
       {
-        set: '~fortawesome/fontawesome-free-solid'
+        set: '@fortawesome/fontawesome-free-solid'
       },
       {
-        set: '~fortawesome/free-brands-svg-icons',
+        set: '@fortawesome/free-brands-svg-icons',
         icons: ['faVk', 'faFacebook', 'faInstagram']
       },
     ],

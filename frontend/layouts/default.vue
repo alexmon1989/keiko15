@@ -28,7 +28,7 @@
 <script>
   import mSidebar from '~/components/SideBar.vue';
   import mFooter from '~/components/Footer.vue';
-  import mNav from '~/components/navbar.vue';
+  import mNav from '~/components/Navbar.vue';
 
   export default {
     components: {mSidebar, mNav, mFooter}

@@ -1,4 +1,5 @@
 module.exports = {
+  router: { base: '/keiko15/' },
   /*
   ** Headers of the page
   */

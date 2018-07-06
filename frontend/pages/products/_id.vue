@@ -224,9 +224,26 @@
     .nav-tabs {
       background-color: #000;
       padding-left: 0;
+      padding-bottom: 1rem;
+      border: 0;
 
       .nav-link {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 3px 0;
+        margin-right: 25px;
+        color: #c0c0c0;
+        background-color: inherit;
+
+        &:hover {
+          border: none;
+        }
+
+        &.active {
+          color: $main_color;
+          background-color: inherit;
+          border: none;
+          border-bottom: 2px solid $main_color;
+        }
       }
     }
 
